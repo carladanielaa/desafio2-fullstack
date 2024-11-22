@@ -1,0 +1,69 @@
+.header {
+  background: linear-gradient(90deg, #001b2f 0%, #005695 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+.logoHeader {
+  border: solid orange;
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    width: 20%;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+.navHeader {
+  width: 30%;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+.barraDeBusca {
+  border: solid #ffffff;
+  border-radius: 20px;
+  margin-right: 1%;
+  width: 20%;
+  height: 6vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 50%;
+    height: 5vh;
+    font-size: 15px;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+
+  
+}
