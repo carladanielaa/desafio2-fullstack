@@ -8,7 +8,7 @@
 }
 
 .logoHeader {
-  border: solid orange;
+  border: solid rgb(0, 255, 17);
   display: flex;
   width: 35%;
   justify-content: space-around;
@@ -26,11 +26,15 @@
 
 .navHeader {
   width: 30%;
+  
 
   ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+  }
+  li{
+    display: flex;
   }
 
   .link {
@@ -50,6 +54,7 @@
   justify-content: space-around;
   align-items: center;
 
+
   input {
     background-color: transparent;
     border: none;
@@ -64,6 +69,62 @@
       font-size: 20px;
     }
   }
+  .boxMenu{
+    display: flex;
+  }
 
   
+}
+@media (max-width: 1120px){// deve ser a pparte do menu
+  .logoHeader{
+    border: solid 2px red;
+    width: 25vw;
+    h1{
+      font-size: 2.1vw;
+    }
+    img{
+  width: 5vw;
+    }
+  }
+  .boxMenu{
+    border: #001b2f;
+    ul{
+      font-size: 1.7vw;
+
+    }
+  }
+  .barraDeBusca{
+    border: solid olivedrab;
+    width: 18vw;
+    input{
+      &::placeholder{
+      font-size: 2vw;
+      }
+    }
+  }
+
+}
+@media (max-width: 760px){
+  .header{
+    border: solid purple;
+    height: 20vh;
+    flex-direction: column;
+  }
+  .barraDeBusca{
+    display: none;
+  }
+  .logoHeader{
+    border: #aaea08;
+
+  }
+  .boxMenu{
+    width: 100%;
+    
+    ul{
+      justify-content: space-evenly;
+      font-size: 22px;
+      display: flex;
+    }
+  }
+
 }

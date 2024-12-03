@@ -1,0 +1,30 @@
+footer{
+    height: 30vh;
+
+}
+.boxSocial{
+    background-color: #005695;
+    height:19vh ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:60px ;
+    padding-right: 50px;
+    nav{
+        border: solid red;
+        width: 18vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+}
+.boxTexto{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
