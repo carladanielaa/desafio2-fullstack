@@ -1,57 +1,152 @@
-.banner{
-    
-    background-image: url('../../assets/img/banner.png');
-    height: 78vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    
-    h2{
-        color: white;
-        width: 27vw;
-        font-size: 30px;
-        margin-left: 150px;
-    }
-}
-// colocar um tamalho para o input
-.devoDoar{
-    padding-left: 60px;
-    height: 8vh;
-    div{
-        border: solid 2 px red;
-       //height: 0vh;
-        display: flex;
-        align-items: center;
-        h2{
-            font-size: 30px;
-            color:#005695;
+.boxCard {
+  display: flex;
+  height: 72vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
 
-        }
-    }
-}
-.boxCard{
+  article {
+    width: 20vw;
+    height: 50vh;
+    background-color: #0157944d;
     display: flex;
-    height: 72vh;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    article{
-        width: 20vw;
-        height: 50vh;
-        background-color:#0157944D;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 10px;
-        p{
-            text-align: center;
-            font-size: 20px;
-        }
-        
+    border-radius: 10px;
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      margin: 30px;
+    }
+
+    img {
+      margin: 15px;
+      width: 50px; /* Ajuste o tamanho da imagem, se necessário */
+      height: 50px;
+    }
+  }
+}
+
+.banner {
+  background-image: url("../../assets/img/banner.png");
+  height: 78vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: white;
+    width: 27vw;
+    font-size: 30px;
+    margin-left: 140px;
+
+  }
+  
+}
+
+.devoDoar {
+  padding-left: 60px;
+  height: 5vh;
+  
+
+  div {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 30px;
+      color: #005695;
+    }
+  }
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 500px) {
+  .banner {
+    background-image: url("../../assets/img/img-p.png");
+  }
+  
+  .banner h2{
+   
+    font-size: 4.5vw;
+    width: 50vw;
+    height: 18vh;
+    text-align: center;
     }
 }
-@media (max-width: 1120px){
+
+@media (max-width: 760px) {
     .banner{
-        background-image: url('../../assets/img/img-p.png');
+       
+        padding: 0 px;
+        margin: 0px;
     }
+  .boxCard {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .boxCard article {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+
+    p {
+      font-size: 18px;
+      margin: 20px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .devoDoar{
+    margin: 30px;
+  
+  
+}
+
+  
+}
+
+
+
+@media (max-width: 500px) {
+  .boxCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .boxCard article {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+
+    p {
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .banner {
+    height: 50vh;
+    background-size: cover;
+  }
+  .devoDoar{
+    margin: 20px;
+
+  
+}
 }

@@ -22,22 +22,22 @@ export default function Inicio() {
 
           <section className={s.boxCard}>
           <article>
-            <img src={roda} alt="" />
+            <img src={roda} alt="Criança em circulo" />
             <p> Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
           
           </article>
           <article>
-            <img src={menino} alt="" />
+            <img src={menino} alt="Menino com o livro" />
             <p> Estimula o hábito da leitura e o aprendizado contínuo.</p>
           
           </article>
           <article>
-            <img src={transform} alt="" />
+            <img src={transform} alt="Imagem de união" />
             <p> Fornece conhecimento e inspiração, permitindo que indivíduos transformem suas vidas.</p>
           
           </article>
           <article>
-            <img src={balance} alt="" />
+            <img src={balance} alt="Imagem de balança" />
             <p> Garante que todos, independentemente de sua condição, tenham oportunidades de aprendizado.</p>
           
           </article>
