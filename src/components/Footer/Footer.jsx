@@ -1,6 +1,6 @@
 import face from"../../assets/img/face.png"
 import instagram from"../../assets/img/instagram.png"
-import twitter from"../../assets/img/twitter.png"
+import twitters from"../../assets/img/twitter.png"
 import linkedin from"../../assets/img/linkedin.png"
 import youtube from"../../assets/img/youtube.png"
 import s from "./footer.module.scss"
