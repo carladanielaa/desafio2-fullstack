@@ -1,82 +1,90 @@
 .principal {
-  height: 80vh;
+  height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+  min-height: 100vh; /* Garante que ocupe pelo menos a altura da tela */
   display: flex;
   justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  padding: 20px; /* Adiciona espaçamento interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+  margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+  font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+  color: #005695; /* Cor do texto */
 }
 
 form {
   border: solid 2px #005695;
   border-radius: 10px;
-  height: 60vh;
-  width: 25vw;
+  padding: 20px; /* Adiciona espaçamento interno */
+  height: auto; /* Permite que o formulário se ajuste ao conteúdo */
+  width: 100%;
+  max-width: 400px; /* Define uma largura máxima */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #005695;
-  }
-  input {
-    border: solid 5px #005695;
-    border-radius: 10px;
-    width: 22vw;
-    height: 5vh;
-    outline: none;
-    padding-left: 20px;
-    &::placeholder {
-      color: #005695;
-    }
-  }
 }
+
+input {
+  border: solid 2px #005695;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px; /* Define uma largura máxima */
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  margin-bottom: 10px; /* Adiciona espaçamento entre os campos */
+}
+
 input:nth-child(6) {
-  border: solid #005695;
+  border: none;
   background-color: #005695;
-  width: 10vw;
-  height: 6vh;
-  padding-left: 0;
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
 }
-/* Estilo para mobile */
+
+input:nth-child(6):hover {
+  background-color: #003f73; /* Cor ao passar o mouse */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo para dispositivos móveis */
 @media screen and (max-width: 500px) {
   .principal {
-    padding: 20px;
+    padding: 10px;
   }
-  .container {
-    h2{
-        text-align: center;
-    }
-    form {
-      width: 100%;
-      padding: 10px;
-    }
 
-    input {
-      font-size: 14px;
-      height: 5vh;
-      width: 60vw;
-    }
+  form {
+    width: 100%;
+    padding: 10px;
+  }
 
-    div {
-      display: flex;
-      text-align: center;
-    }
+  input {
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+  }
 
-    img {
-      max-width: 80%;
-      margin-bottom: 5px;
-    }
-    
+  img {
+    max-width: 80%;
+    margin-bottom: 10px;
   }
 }

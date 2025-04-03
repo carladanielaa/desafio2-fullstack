@@ -1,14 +1,21 @@
 .caixaDoados{
-    height: 70vh;
+    //height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    min-height: 80vh; //aqui estou deixando o valor minimo é de 80vh
 }
 
 .cardLivros{
-    height: 60vh;
-    width: 85vw;
+    //height: 60vh;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    padding: 50px;
+    min-height: 70vh;
+    gap: 15px;
     
    
     article{
@@ -20,6 +27,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+         img{
+            padding-bottom: 20px;
+            width: 30%;
+         }
     }
 
     p{
