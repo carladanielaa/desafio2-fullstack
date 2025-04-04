@@ -42,15 +42,12 @@
     width: 27vw;
     font-size: 30px;
     margin-left: 140px;
-
   }
-  
 }
 
 .devoDoar {
   padding-left: 60px;
   height: 5vh;
-  
 
   div {
     display: flex;
@@ -68,22 +65,21 @@
   .banner {
     background-image: url("../../assets/img/img-p.png");
   }
-  
-  .banner h2{
-   
+
+  .banner h2 {
     font-size: 4.5vw;
     width: 50vw;
     height: 18vh;
     text-align: center;
-    }
+  }
 }
 
 @media (max-width: 760px) {
-    .banner{
-       
-        padding: 0 px;
-        margin: 0px;
-    }
+  .banner {
+    padding: 0px;
+    margin: 0px;
+  }
+
   .boxCard {
     flex-direction: column;
     height: auto;
@@ -104,16 +100,11 @@
       height: 40px;
     }
   }
-  .devoDoar{
+
+  .devoDoar {
     margin: 30px;
-  
-  
+  }
 }
-
-  
-}
-
-
 
 @media (max-width: 500px) {
   .boxCard {
@@ -144,9 +135,49 @@
     height: 50vh;
     background-size: cover;
   }
-  .devoDoar{
-    margin: 20px;
 
-  
+  .devoDoar {
+    margin: 20px;
+  }
 }
+
+/* Media query para telas menores que 300px */
+@media (max-width: 300px) {
+  .devoDoar {
+    padding: 10px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    margin: 10px 0; /* Adiciona espaçamento acima e abaixo */
+  }
+
+  .devoDoar div {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+  }
+
+  .devoDoar h2 {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+    margin: 0; /* Remove margens extras */
+  }
+
+  .boxCard {
+    flex-direction: column; /* Empilha os cards verticalmente */
+    align-items: center; /* Centraliza os cards */
+    gap: 15px; /* Adiciona espaçamento entre os cards */
+  }
+
+  .boxCard article {
+    width: 90%; /* Faz os cards ocuparem quase toda a largura da tela */
+    padding: 10px; /* Adiciona espaçamento interno */
+  }
+
+  .boxCard article p {
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    margin: 5px; /* Reduz o espaçamento entre os parágrafos */
+  }
+
+  .boxCard article img {
+    width: 30px; /* Ajusta o tamanho da imagem */
+    height: 30px;
+  }
 }
