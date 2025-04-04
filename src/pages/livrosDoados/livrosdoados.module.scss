@@ -1,51 +1,58 @@
-.caixaDoados{
-    //height: 90vh;
+.caixaDoados {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 80vh; //aqui estou deixando o valor minimo é de 80vh
-}
-
-.cardLivros{
-    //height: 60vh;
+    min-height: 80vh; /* Altura mínima */
+  }
+  
+  .cardLivros {
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around ;
+    justify-content: space-around;
     padding: 50px;
     min-height: 70vh;
     gap: 15px;
-    
-   
-    article{
-        border: 3px solid rgba(0, 86, 149, 1);
-        width: 225px;
-        height: 240px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-         img{
-            padding-bottom: 20px;
-            width: 30%;
-         }
-    }
-
-    p{
-        
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-
-    }
-
-
-}
-@media (max-width: 500px) {
-    .cardLivros article{
-        margin-left: 60px;
-    }
+  
+    article {
+      border: 3px solid rgba(0, 86, 149, 1);
+      width: 225px;
+      height: 240px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      img {
+        padding-bottom: 20px;
+        width: 30%;
+      }
     }
   
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  
+  /* Media query para dispositivos móveis */
+  @media (max-width: 500px) {
+    .cardLivros {
+      flex-direction: column; /* Empilha os itens verticalmente */
+      align-items: center; /* Centraliza os itens horizontalmente */
+      gap: 20px; /* Espaçamento entre os itens */
+    }
+  
+    .cardLivros article {
+      width: 90%; /* Faz os cards ocuparem 90% da largura da tela */
+      max-width: 300px; /* Define uma largura máxima */
+      margin: 0 auto; /* Centraliza os cards */
+    }
+  
+    .cardLivros article img {
+      width: 50%; /* Ajusta o tamanho da imagem */
+    }
+  }
